@@ -1,6 +1,13 @@
 # UMGC-242
 
 ## Course Organization, Q&A
+- Course Overview
+- Tutorials + Quizzes + Projects
+- Learning how to learn languages
+
+Question and Answer Time
+- Do I need to read the material?
+- Why are discussions important?
 
 ## Section 1: Classes and Objects
 
