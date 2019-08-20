@@ -15,18 +15,144 @@ Question and Answer Time
 - What tools should I be using? 
 
 ## Section 1a: Classes and Objects
-This is often a really challenging concpet for students. 
-What is a class vs an object? 
-> (Blueprint vs Instance Analogy)
+This is often a really challenging concpet for students. What is a class vs an object? 
 
+```java
+public class Car {
+    public static void main(String args[]) {
+        
+      Car myCar = new Car(2010, "Ford", "Mustang");
+      Car yourCar = new Car(2012, "Toyota", "Prius");
 
-## Section 1b: Inheritance & Polymorphism
-e
-## Section 1c: Abstract Classes & Interfaces
+      System.out.println(myCar);
+      System.out.println(yourCar);
+      System.out.println(yourCar.getAge());
+    }
+    
+    private int year;
+    private String make;
+    private String model;
+    
+    public Car(int year, String make, String model) {
+        this.year = year;
+        this.make = make;
+        this.model = model;
+    }
+    
+    public String toString() {
+        return this.year + " " + this.make + " " + this.model;
+    }
+    
+    public int getAge() {
+        int age = 2019 - this.year;
+        printIfOld(age);
+        return age;
+    }
+	
+	private void printIfOld(int age) {
+		if (age > 5) {
+            System.out.println("You car is OLD!!!");
+        }
+	}
+}
+```
 
-## Section 1d: Packages & Enums
+Ok now that we sort of get it lets make it a bit more formalized. 
 
-## Section 1e: Dry vs Wet Principles
+Objects provide: (aka the blueprint)
+- Modularity
+- Information Hiding
+- Code Re-Use
+- Class definitions have a name, modifier and variables and methods.
+- Variables have a modifier, name and possibly a defined value.
+- Methods have a modifier, name, return type, params and possibly exceptions thrown.
+
+Classes provide: (aka the instance)
+- Declaration
+- Instantiation
+- Initialization
+> In other words: name of variable, object type and data elements.
+
+Exercise 1: 
+- https://www.jdoodle.com/online-java-compiler/
+- Create a class that represents a point on a graph, its data elements are: x and y coordinates.
+- Create a class that represents a rectange (which conssts of one point plus a width and height).
+- Add method that will compute the rectangles area (length * height).
+- Create a main method that creates a rectangle object and prints its area.
+<details>
+  <summary>Exercise Solution:</summary>
+  
+```java
+public class Exercise1 {
+    public static void main(String[] args) {
+        System.out.println(new Rectangle(7,5).getArea());
+		
+		// Does my rectangle still exist?
+    }
+    
+    public class Point {
+        public int x = 0;
+        public int y = 0;
+        //constructor
+        public Point(int a, int b) {
+            x = a;
+            y = b;
+        }
+    }
+    
+    public class Rectangle {
+        public int width = 0;
+        public int height = 0;
+        public Point origin;
+    
+        // four constructors
+        public Rectangle() {
+            origin = new Point(0, 0);
+        }
+        public Rectangle(Point p) {
+            origin = p;
+        }
+        public Rectangle(int w, int h) {
+            origin = new Point(0, 0);
+            width = w;
+            height = h;
+        }
+        public Rectangle(Point p, int w, int h) {
+            origin = p;
+            width = w;
+            height = h;
+        }
+    
+        // a method for moving the rectangle
+        public void move(int x, int y) {
+            origin.x = x;
+            origin.y = y;
+        }
+    
+        // a method for computing the area of the rectangle
+        public int getArea() {
+			int area = width * height;
+            return area;
+        }
+    }
+}
+```
+</details>
+
+Object vs Class wrap up:
+- Does my rectangle still exist? Why?
+- What is the scope of the variable area? Why?
+- Should rectangle have public variables? Why?
+- Is there anything else we should improve?
+
+Scope & Lifetime:
+Two new terms.
+- Scope - is the region or section of code where a variable can be accessed.
+- Lifetime - how long does a variable/object exist.
+
+Everything has them and lets talk briefly about how java tracks and cleans things up for us. 
+
+## Section 1b: Dry vs Wet Principles
 In general these are some of the most well known good software design principals. If you aren't already familiar then theres a good chance you have already probably been doing some of it. 
 
 (Clothes analogy)
@@ -140,7 +266,7 @@ public class Uber {
 }
 ```
 
-## Section 1f: Kiss Principles
+## Section 1c: Kiss Principles
 KISS stand for "Keep It Simple, Silly" (or whatever colorful S word you want to use there) and it is meant to be funny but also VERY true. 
 
 Bottom line is code should be simple and clear, making it easy to understand. Complicated bits should have an easy to follow comment. 
@@ -183,7 +309,100 @@ public String weekday2(int day) {
 }
 ```
 
+## Section 1d: Exercises
+1. Consider the following class:
+
+```java
+public class IdentifyMyParts {
+    public static int x = 7; 
+    public int y = 3; 
+}
+```
+ 1. What are the class variables?
+ 1. What are the instance variables?
+ 1. What is the output from the following code:
+ ```java
+public class Execise1 {
+    public static int x = 2; 
+    public int y = 3; 
+	
+	public static void main(String[] args) {
+    	Execise1 a = new Execise1(); 
+        Execise1 b = new Execise1(); 
+        a.y = 10; 
+        b.y = 5; 
+        a.x = 1; 
+        b.x = 2; 
+        System.out.println("a.y = " + a.y); 
+        System.out.println("b.y = " + b.y); 
+        System.out.println("a.x = " + a.x); 
+        System.out.println("b.x = " + b.x); 
+        System.out.println("Execise1.x = " + Execise1.x);
+    }
+}
+```
+<details>
+  <summary>Solution</summary>
+1a. X
+1b. Y
+1c. Output: 
+a.y = 10
+b.y = 5
+a.x = 2
+b.x = 2
+Execise1.x = 2
+</details>
+
+1. Whats wrong with this program?
+
+ ```java
+public class SomethingIsWrong {
+    public static void main(String[] args) {
+        Rectangle myRect;
+        myRect.width = 40;
+        myRect.height = 50;
+        System.out.println("myRect's area is " + myRect.area());
+    }
+}
+```
+
+1. How would we fix the program above?
+<details>
+  <summary>Solution</summary>
+public class SomethingIsRight {
+    public static void main(String[] args) {
+        Rectangle myRect = new Rectangle();
+        myRect.width = 40;
+        myRect.height = 50;
+        System.out.println("myRect's area is " + myRect.area());
+    }
+}
+</details>
+
+## Section 2a: Inheritance & Polymorphism
+TBD
+<details>
+  <summary>My Notes</summary>
+
+https://docs.oracle.com/javase/tutorial/java/concepts/inheritance.html
+https://docs.oracle.com/javase/tutorial/java/javaOO/nested.html
+https://docs.oracle.com/javase/tutorial/java/IandI/subclasses.html
+</details>
+
+## Section 2b: Abstract Classes & Interfaces
+TBD
+
+## Section 2c: Packages & Enums
+TBD
+
 ## References
+Online Material for this week:
 https://docs.oracle.com/javase/tutorial/java/javaOO/index.html
 https://docs.oracle.com/javase/tutorial/java/concepts/index.html
 https://learn.umuc.edu/d2l/le/content/426317/viewContent/15690270/View
+
+Google Code Style: 
+https://google.github.io/styleguide/javaguide.html
+
+Online compile tool:
+https://www.jdoodle.com/online-java-compiler/
