@@ -1,4 +1,4 @@
-# UMGC-242 - Course 1
+# UMGC-242 - Course 2
 
 Exercise 1: 
 - https://www.jdoodle.com/online-java-compiler/
@@ -65,3 +65,32 @@ public class Exercise1 {
 }
 ```
 </details>
+
+
+## Section 2a: Inheritance & Polymorphism
+TBD
+<details>
+  <summary>My Notes</summary>
+
+https://docs.oracle.com/javase/tutorial/java/concepts/inheritance.html
+https://docs.oracle.com/javase/tutorial/java/javaOO/nested.html
+https://docs.oracle.com/javase/tutorial/java/IandI/subclasses.html
+</details>
+
+## Section 2b: Abstract Classes & Interfaces
+TBD
+
+## Section 2c: Packages & Enums
+TBD
+
+## References
+Online Material for this week:
+https://docs.oracle.com/javase/tutorial/java/javaOO/index.html
+https://docs.oracle.com/javase/tutorial/java/concepts/index.html
+https://learn.umuc.edu/d2l/le/content/426317/viewContent/15690270/View
+
+Google Code Style: 
+https://google.github.io/styleguide/javaguide.html
+
+Online compile tool:
+https://www.jdoodle.com/online-java-compiler/
