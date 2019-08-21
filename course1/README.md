@@ -39,13 +39,13 @@ public class Car {
 		if (age > 5) {
             System.out.println("You car is OLD!!!");
         }
-	}
+    }
 }
 ```
 
 Ok now that we sort of get it lets make it a bit more formalized. 
 
-Objects provide: (aka the blueprint)
+Classes provide: (aka the blueprint)
 - Modularity
 - Information Hiding
 - Code Re-Use
@@ -53,77 +53,11 @@ Objects provide: (aka the blueprint)
 - Variables have a modifier, name and possibly a defined value.
 - Methods have a modifier, name, return type, params and possibly exceptions thrown.
 
-Classes provide: (aka the instance)
+Objects provide: (aka the instance)
 - Declaration
 - Instantiation
 - Initialization
 > In other words: name of variable, object type and data elements.
-
-Exercise 1: 
-- https://www.jdoodle.com/online-java-compiler/
-- Create a class that represents a point on a graph, its data elements are: x and y coordinates.
-- Create a class that represents a rectange (which conssts of one point plus a width and height).
-- Add method that will compute the rectangles area (length * height).
-- Create a main method that creates a rectangle object and prints its area.
-<details>
-  <summary>Exercise Solution:</summary>
-  
-```java
-public class Exercise1 {
-    public static void main(String[] args) {
-        System.out.println(new Rectangle(7,5).getArea());
-		
-		// Does my rectangle still exist?
-    }
-    
-    public class Point {
-        public int x = 0;
-        public int y = 0;
-        //constructor
-        public Point(int a, int b) {
-            x = a;
-            y = b;
-        }
-    }
-    
-    public class Rectangle {
-        public int width = 0;
-        public int height = 0;
-        public Point origin;
-    
-        // four constructors
-        public Rectangle() {
-            origin = new Point(0, 0);
-        }
-        public Rectangle(Point p) {
-            origin = p;
-        }
-        public Rectangle(int w, int h) {
-            origin = new Point(0, 0);
-            width = w;
-            height = h;
-        }
-        public Rectangle(Point p, int w, int h) {
-            origin = p;
-            width = w;
-            height = h;
-        }
-    
-        // a method for moving the rectangle
-        public void move(int x, int y) {
-            origin.x = x;
-            origin.y = y;
-        }
-    
-        // a method for computing the area of the rectangle
-        public int getArea() {
-			int area = width * height;
-            return area;
-        }
-    }
-}
-```
-</details>
 
 Object vs Class wrap up:
 - Does my rectangle still exist? Why?
@@ -203,7 +137,7 @@ public class Uber {
         if(UberUtils.driverIsAround() && (hours > 21 && hours < 5)){
         	System.out.println("driver will be around in 3 mins but u don not want to go out now");
         	return true;
-        }else{
+        } else {
         	System.out.println("sorry there no available driver around you");
         }
         return false;
@@ -327,20 +261,22 @@ public class Execise1 {
     }
 }
 ```
-<details>
-  <summary>Solution</summary>
-1a. X
-1b. Y
-1c. Output: 
-a.y = 10
-b.y = 5
-a.x = 2
-b.x = 2
-Execise1.x = 2
-</details>
+    <details>
+    <summary>Solution</summary>
+
+    ```java
+    1a. X
+    1b. Y
+    1c. Output: 
+    a.y = 10
+    b.y = 5
+    a.x = 2
+    b.x = 2
+    Execise1.x = 2
+    ```
+    </details>
 
 1. Whats wrong with this program?
-
  ```java
 public class SomethingIsWrong {
     public static void main(String[] args) {
@@ -351,19 +287,21 @@ public class SomethingIsWrong {
     }
 }
 ```
+2. How would we fix the program above?
+    <details>
+    <summary>Solution</summary>
 
-1. How would we fix the program above?
-<details>
-  <summary>Solution</summary>
-public class SomethingIsRight {
-    public static void main(String[] args) {
-        Rectangle myRect = new Rectangle();
-        myRect.width = 40;
-        myRect.height = 50;
-        System.out.println("myRect's area is " + myRect.area());
+     ```java
+    public class SomethingIsRight {
+        public static void main(String[] args) {
+            Rectangle myRect = new Rectangle();
+            myRect.width = 40;
+            myRect.height = 50;
+            System.out.println("myRect's area is " + myRect.area());
+        }
     }
-}
-</details>
+     ```
+    </details>
 
 ## References
 Online Material for this week:
