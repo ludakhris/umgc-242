@@ -1,7 +1,7 @@
 # UMGC-242 - Course 1
 
 ## Section 1a: Classes and Objects
-This is often a really challenging concpet for students. What is a class vs an object? 
+This is often a really challenging concept for students. What is a class vs an object? 
 
 ```java
 public class Car {
