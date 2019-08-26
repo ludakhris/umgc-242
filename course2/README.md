@@ -790,7 +790,9 @@ public class Card {
 </details>
 
 ## Section 2g: Project Review
-TBD
+- Creation of the employee class
+- Creation of two subclasses (Salesman, Executive)
+- Main method that reads from a file (examples in the course content)
 
 ## References
 Online Material for this week:
