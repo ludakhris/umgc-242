@@ -506,6 +506,7 @@ public class InheritExample {
 
 ## Section 2e: Review of Access Modifiers
 Now that we understand subclasses lets go back and review the access modifiers
+
 | Modifier            	| Class 	| Package 	| Subclass 	| World 	|
 |---------------------	|-------	|---------	|----------	|-------	|
 | public              	|   Y   	|    Y    	|     Y    	|   Y   	|
@@ -521,7 +522,7 @@ Now that we understand subclasses lets go back and review the access modifiers
 
 
 ## Section 2f: Exercises
-####Exercise 1
+#### Exercise 1
 For the following piece of code what gets printed?
 ```java
 public class InheritExample {
@@ -574,7 +575,7 @@ B-1
 B-4
 </details>
 
-####Exercise 2
+#### Exercise 2
 Lets review this next piece of code, how can we improve it?
 ```java
 
