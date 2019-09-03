@@ -213,7 +213,12 @@ public static void cat(File file) {
 We've covered these topics already so lets use them in a real example. 
 
 Situation:
-- You are managing a hotel. You need to create a system that allows you to track the guests in each room of the hotel, their occupancy etc. 
+- You are managing two hotels. 
+- You need to create a system that allows you to track every room in your two hotels and how many rooms are available.
+- You also need to track who is in which room and if the room is occupied.
+- A hotel will consist of a list of rooms.
+- There are various stypes of room types (SINGLE, DOUBLES, SUITES) and each room has a max allowed number of people, a floor number, room number and a list of guests.
+- For guest information you only need to track the basics (name and age). 
 
 ## References
 Online Material for this week:
