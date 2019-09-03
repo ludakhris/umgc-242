@@ -210,7 +210,10 @@ public static void cat(File file) {
 ```
 
 ## Section 3c: Abstract Classes & Interfaces
-TBD
+We've covered these topics already so lets use them in a real example. 
+
+Situation:
+- You are managing a hotel. You need to create a system that allows you to track the guests in each room of the hotel, their occupancy etc. 
 
 ## References
 Online Material for this week:
