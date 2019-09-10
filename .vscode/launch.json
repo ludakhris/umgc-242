@@ -1,0 +1,28 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Main2",
+            "request": "launch",
+            "mainClass": "Main2"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - HotelGui",
+            "request": "launch",
+            "mainClass": "HotelGui"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - GuiExample",
+            "request": "launch",
+            "mainClass": "GuiExample"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Main",
+            "request": "launch",
+            "mainClass": "Main"
+        }
+    ]
+}

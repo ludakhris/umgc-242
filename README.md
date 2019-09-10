@@ -40,7 +40,7 @@ Questions for me:
 ## Course 1 - Classes/Objects, DRY/WET/KISS Principles - <a href="https://github.com/ludakhris/umgc-242/tree/master/course1" target="_blank">Content</a>
 ## Course 2 - Inheritance & Polymorphism, Abstract Classes & Interfaces, Packages & Enums - <a href="https://github.com/ludakhris/umgc-242/tree/master/course2" target="_blank">Content</a>
 ## Course 3 - More on Exceptions, Interfaces and Abstract Classes - <a href="https://github.com/ludakhris/umgc-242/tree/master/course3" target="_blank">Content</a>
-## Course 4 - TBD
+## Course 4 - Advanced Class Design, User Interfaces & Project Review - <a href="https://github.com/ludakhris/umgc-242/tree/master/course4" target="_blank">Content</a>
 ## Course 5 - TBD
 ## Course 6 - TBD
 ## Course 7 - TBD
