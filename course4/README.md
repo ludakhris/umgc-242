@@ -1,4 +1,4 @@
-# UMGC-242 - Course 3 - Advanced Class Design, User Interfaces & Project Review
+# UMGC-242 - Course 4 - Advanced Class Design, User Interfaces & Project Review
 
 ## Section 4a: Simple Hotel Management System
 Situation:
