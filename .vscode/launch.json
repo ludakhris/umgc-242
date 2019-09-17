@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - HotelAdvancedMain",
+            "request": "launch",
+            "mainClass": "HotelAdvancedMain",
+            "projectName": "umgc-242_dea3aa73"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - Main2",
             "request": "launch",
             "mainClass": "Main2"

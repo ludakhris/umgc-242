@@ -1,0 +1,25 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - HotelDisplayGui",
+            "request": "launch",
+            "mainClass": "HotelDisplayGui",
+            "projectName": "course5_e387e7de"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - CheckinGui",
+            "request": "launch",
+            "mainClass": "CheckinGui",
+            "projectName": "course5_e387e7de"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - HotelAdvancedMain",
+            "request": "launch",
+            "mainClass": "HotelAdvancedMain",
+            "projectName": "course5_e387e7de"
+        }
+    ]
+}
