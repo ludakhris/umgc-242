@@ -53,7 +53,7 @@ There are really only two things any recursive code needs to ensure that it will
 
 Can you identify what these are in our previous example?
 
-## Section 6b: Recursive Problem
+## Section 6c: Recursive Problem
 
 Scenario:
 
@@ -80,10 +80,39 @@ class Reverse {
 ```
 </details>
 
-## Section 6b: Harder Recursive Problem
+## Section 6d: Harder Recursive Problem
 
-Source: https://www.topcoder.com/community/competitive-programming/tutorials/an-introduction-to-recursion-part-1/
+![Org Chart](https://community.topcoder.com/i/education/hierarchy2.PNG)
 
+Task:
+- Write a function that will count the number of employees under any manager.
+
+<details>
+  <summary>Exercise Solution:</summary>
+  
+```java
+PSEDUOCODE
+public int countEmployeesUnder(String employeeName)
+{
+    declare variable counter
+    counter = 0
+    for each person in employeeDatabase
+    {
+        if(person.manager == employeeName)
+        {
+            counter = counter + 1
+            counter = counter + countEmployeesUnder(person.name)
+        }
+    }
+    return counter
+}
+```
+</details>
+
+## Section 6e: Project Review
+- Make a simple UI
+- Write both a recursive and iterative versions of functions that compute the sequence.
+- Decide how you want to measure each methods "effectiveness" (intentionally nebulus)
 
 ## References
 Online Material for this week:
