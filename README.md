@@ -42,7 +42,7 @@ Questions for me:
 ## Course 3 - More on Exceptions, Interfaces and Abstract Classes - <a href="https://github.com/ludakhris/umgc-242/tree/master/course3" target="_blank">Content</a>
 ## Course 4 - Advanced Class Design, User Interfaces & Project Review - <a href="https://github.com/ludakhris/umgc-242/tree/master/course4" target="_blank">Content</a>
 ## Course 5 - Advanced User Interfaces & Listeners - <a href="https://github.com/ludakhris/umgc-242/tree/master/course5" target="_blank">Content</a>
-## Course 6 - TBD
-## Course 7 - TBD
-## Course 8 - TBD
+## Course 6 - I/O & Recursion, Project 3 - <a href="https://github.com/ludakhris/umgc-242/tree/master/course6" target="_blank">Content</a>
+## Course 7 - Data Structures, Generics & Java Collections Framework - <a href="https://github.com/ludakhris/umgc-242/tree/master/course7" target="_blank">Content</a>
+## Course 8 - List, Set, Map Advanced Topics & Final Project - <a href="https://github.com/ludakhris/umgc-242/tree/master/course8" target="_blank">Content</a>
 
