@@ -91,8 +91,11 @@ The JCF has this basic hierarchy:
 Online Material for this week:
 
 https://learn.umuc.edu/d2l/le/content/426317/viewContent/15690302/View
+
 https://docs.oracle.com/javase/tutorial/extra/generics/index.html
+
 https://docs.oracle.com/javase/tutorial/collections/TOC.html
+
 http://www.tutorialspoint.com/java/java_collections.htm
 
 Google Code Style: 
