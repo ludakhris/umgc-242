@@ -1,3 +1,5 @@
+package hotel;
+
 import java.awt.BorderLayout;
 import java.awt.GridLayout;
 
@@ -18,7 +20,7 @@ public class HotelGui extends JFrame {
 
         // Create panel for the north
         JPanel controls = new JPanel();
-        controls.setLayout(new GridLayout(3,2));
+        controls.setLayout(new GridLayout(4,2));
         JButton hotelACheckinButton = new JButton("Check-In for " + a.getName());
         controls.add(hotelACheckinButton);
         JButton hotelBCheckinButton = new JButton("Check-In for " + b.getName());
@@ -32,9 +34,15 @@ public class HotelGui extends JFrame {
         controls.add(hotelAGuests);
         JButton hotelBGuests = new JButton("Get All Guest Info " + b.getName());
         controls.add(hotelBGuests);
-
         hotelAGuests.addActionListener(new GuestInfoActionListener(a));
         hotelBGuests.addActionListener(new GuestInfoActionListener(b));
+
+        JButton hotelASearch = new JButton("Search " + a.getName());
+        controls.add(hotelASearch);
+        JButton hotelBSearch = new JButton("Search " + b.getName());
+        controls.add(hotelBSearch);
+        hotelASearch.addActionListener(new GuestSearchActionListener(a));
+        hotelBSearch.addActionListener(new GuestSearchActionListener(b));
 
         // Second panel for output
         JPanel output = new JPanel();
@@ -72,7 +80,7 @@ public class HotelGui extends JFrame {
     public static void createOutput(Hotel hotel, JTextArea output) {
 
         output.setText(
-            String.format("The %s hotel, room capacity %d out of %d", 
-            hotel.getName(), hotel.getNumberRoomsOccupied(), hotel.getMaxRooms()));
+            String.format("The %s hotel, vacant singles: %d, doubles: %d", 
+            hotel.getName(), hotel.getVacantSingles(), hotel.getVacantDoubles()));
     }
 }

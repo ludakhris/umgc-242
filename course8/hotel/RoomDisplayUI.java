@@ -1,3 +1,5 @@
+package hotel;
+
 import java.awt.BorderLayout;
 import java.awt.GridLayout;
 

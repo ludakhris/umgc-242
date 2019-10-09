@@ -11,6 +11,12 @@ public class Test {
         list.add(3);
         System.out.println(list);
 
+        int sum = 0;
+        for (Integer v : list) {
+                sum += v;
+        }
+        System.out.println(sum);
+
         HashSet<Integer> set = new HashSet<>();
         set.add(1);
         set.add(2);

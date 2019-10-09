@@ -1,3 +1,5 @@
+package hotel;
+
 public class HotelFullException extends Exception {
     private static final long serialVersionUID = 1L;
 
