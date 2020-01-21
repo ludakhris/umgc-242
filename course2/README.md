@@ -6,7 +6,6 @@ What did we learn last time? Let's Review
 - DRY Principal & KISS
 
 #### Review Exercise 1: 
-- https://www.jdoodle.com/online-java-compiler-ide/
 - Create a class that represents a point on a graph, its data elements are: x and y coordinates.
 - Create a class that represents a rectangle (which consists of one point plus a width and height).
 - Add method that will compute the rectangles area (length * height).
@@ -790,9 +789,10 @@ public class Card {
 </details>
 
 ## Section 2g: Project Review
-- Creation of the employee class
-- Creation of two subclasses (Salesman, Executive)
+- Creation of the weight class
 - Main method that reads from a file (examples in the course content)
+- Creation of a main class to contain functions for working with weights.
+
 
 ## References
 Online Material for this week:
