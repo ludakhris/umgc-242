@@ -51,11 +51,12 @@ Situation:
 - Same situation as before but you want to extend you existing system with a user interface so that your front desk team can interact with it.
 
 ## Section 4d: Project Review
-- Very similar to how we created an hotel management system, in this project you'll be creating an ATM machine.
-- An ATM machine is just a device that allows you to make transactions on an account (just like our system let us operate on a hotel).
-- There are two accounts (just like we had two hotels): check and savings. However BOTH are accounts. 
-- The UI will allow you to deposit, withdraw money, get the balance and transfer between the two.
-- There are conditions to check an throw exceptions, etc. 
+- Automobile class (makeAndModel/price, constructor, salesTax(), toString())
+- Two subclasses: 
+  - Electric (weightInPounds, constructor, salesTax(), toString())
+  - Hybrid (mpg, constructor, salesTax(), toString())
+- Develop a UI that allows you to specify the details about a car, compute the sales tax. 
+  - After all the cars are entered it should allow you to display a report of all the cars (which should use the classes to string method). 
 
 ## References
 Online Material for this week:
