@@ -110,9 +110,12 @@ public int countEmployeesUnder(String employeeName)
 </details>
 
 ## Section 6e: Project Review
-- Make a simple UI
-- Write both a recursive and iterative versions of functions that compute the sequence.
-- Decide how you want to measure each methods "effectiveness" (intentionally nebulus)
+- Shape class (abstract, extends Rectangle): color, solidOrHallow, numShapes, constructor(), setColor() getSolid(), static: getNoOfShapes(), abstract: draw().
+- Oval (extends shape): constructor(), @Override: draw().
+- Rectangular (extens Shape): constructor(), @Override: draw().
+- Drawing (extends JPanel): currentShape, paintComponent(), @Override: getPreferedSize(), drawShape().
+- OutsideBounds (checked Exception).
+- Project3: GUI, 3 sections [left(grid layout), right(panel with border), bottom (single button)]. Several of the fields are "typed" should use enums for this. 
 
 ## References
 Online Material for this week:
