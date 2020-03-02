@@ -48,9 +48,10 @@ You guys do great work but we really need some additional things
 - We need to be able to search for a hotel guests room number (quickly).
 
 ## Section 8c: Project Review
-- Create a database of students
-- Have a UI that allow you to insert/delete/find and update a student.
-- Add student grades and compute GPAs. 
+- Status Enum (FOR_SALE, UNDER_CONTRACT and SOLD)
+- StateChangeable - Interface, Generic Type of Status Enum, changeState(T)
+- Property - Implements StateChangeable, propertyAddress (String), numBedRooms(int), sqft(int), price(int), status (Status), constructor(), changeState(), toString().
+- Project4 - UI Class, propertyRecords (TreeMap)
 
 ## References
 Online Material for this week:
