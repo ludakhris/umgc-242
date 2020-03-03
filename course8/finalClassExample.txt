@@ -1,0 +1,28 @@
+Final Project
+
+AutoShop<T>
+	numberOfBays
+	boolean serviceCar(T) throws UnsupportedVehicle
+	
+EngineType: HYBRID, GASOLINE, ELECTRIC, NATURAL_GAS
+	
+AbstractVehicle
+	makeAndModel
+	year
+	engineType
+	lastService
+	abstract boolean requiresService()
+Car
+	serviceRequired 1m
+Trunk
+	serviceRequired 3m
+
+UI:
+	-allows entry of cars
+	-puts cars in service
+	-displays report of cars
+
+Main
+	listOfCars
+	mapOfShops
+	
